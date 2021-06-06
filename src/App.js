@@ -2,6 +2,10 @@ import './App.css';
 import Avatar from './images/avatar.png'
 import Disable from './images/disable.png'
 import Calendar from './images/calendar.png'	
+import DateContainer from './components/DateContainer';
+import TimeContainer from './components/TimeContainer';
+import AppointmentDateContainer from './components/AppointmentDateContainer';
+import AppointmentTimeContainer from './components/AppointmentTimeContainer';
 
 function App() {
   return (
@@ -23,23 +27,21 @@ function App() {
 				<img src={Calendar} alt="" />
 			</div>
 		</div>
-		<div className="date-items">
-			//
-		</div>
+		<DateContainer/>
 		<div className="time">Свободное время</div>
-		<div className="time-item">
-			//
-		</div>
+		<TimeContainer/>
 		<div className="appointment">
 			<div className="date-time">
-				<div className="appointment-date">
+				{/* <div className="appointment-date">
 					<div>Дата</div>
 					<div>26 мая</div>
 				</div>
 				<div className="appointment-time">
 					<div>Время</div>
 					<div>18:30</div>
-				</div>
+				</div> */}
+				<AppointmentDateContainer/>
+				<AppointmentTimeContainer/>
 			</div>
 			<button className="appointment-button">Записаться на бесплатную встречу</button>
 		</div>
