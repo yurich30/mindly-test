@@ -1,1 +1,92 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: Montserrat;
+}
+.container{
+    max-width: 375px;
+    width: 100%;
+    margin: 80px auto 136px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+}
+.name{
+    font-weight: 700;
+    font-size: 18px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+.description{
+    margin-left: 24px;
+    width: 117px;
+    height: 80px;
+    font-weight: 400;
+    text-align: center;
+}
+.time-span{
+    font-weight: 600;
+    text-align: center;
+}
+.date{
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.date-items{
+    margin-top: 16px;
+}
+.time{
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.time-item{
+    margin-top: 16px;
+}
+.appointment{
+    margin-top: 32px;
+    padding: 24px 12px;
+    border: 1px solid #EDEFF2;
+    width: 100%;
+}
+.date-time{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 26.5px;
+    position: relative;
+}
+.date-time::after{
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-color: #E6E6E6;
+    left: 50%;
+    transform: translate(-50%);
+}
+.appointment-button{
+    margin-top: 16px;
+    width: 100%;
+    background-color: #33BDE4;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24.5px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#fff
+}
