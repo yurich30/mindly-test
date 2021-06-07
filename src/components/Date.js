@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Date = (props) => {
-    const dateItems = props.date.date
+const Date = ({date, appointmentDateID, setterDate}) => {
     return(
         <div className="date-items" >
-            {dateItems.map(item => <div key={item.id} onClick={() => {props.setterDate(item.id, item.day, item.month)}}>
-                <div>{item.dayOfWeek}</div>
-                <div>{item.day}</div>
+            {date.map(item => <div className={appointmentDateID === item.id ? "date-item date-item-active" : "date-item"} key={item.id} onClick={() => {setterDate(item.id, item.day, item.month)}}>
+                <div className="date-item-day">{item.dayOfWeek}</div>
+                <div className="date-item-time">{item.day}</div>
             </div>)}
         </div>
     )

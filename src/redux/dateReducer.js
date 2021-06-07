@@ -2,7 +2,7 @@ let initialState = {
     date: [
         {
             id: 1,
-            dayOfWeek: "Сегодня",
+            dayOfWeek: "Пн",
             day: "7",
             month: "Июня"
         },

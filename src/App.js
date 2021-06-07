@@ -4,10 +4,10 @@ import Disable from './images/disable.png'
 import Calendar from './images/calendar.png'	
 import DateContainer from './components/DateContainer';
 import TimeContainer from './components/TimeContainer';
-import AppointmentDateContainer from './components/AppointmentDateContainer';
-import AppointmentTimeContainer from './components/AppointmentTimeContainer';
+import AppointmentContainer from './components/AppointmentContainer';
 
-function App() {
+function App(props) {
+
   return (
     <div className="container">
 		<div className="name">Алексей Карачинский</div>
@@ -30,21 +30,7 @@ function App() {
 		<DateContainer/>
 		<div className="time">Свободное время</div>
 		<TimeContainer/>
-		<div className="appointment">
-			<div className="date-time">
-				{/* <div className="appointment-date">
-					<div>Дата</div>
-					<div>26 мая</div>
-				</div>
-				<div className="appointment-time">
-					<div>Время</div>
-					<div>18:30</div>
-				</div> */}
-				<AppointmentDateContainer/>
-				<AppointmentTimeContainer/>
-			</div>
-			<button className="appointment-button">Записаться на бесплатную встречу</button>
-		</div>
+		<AppointmentContainer/>
     </div>
   );
 }

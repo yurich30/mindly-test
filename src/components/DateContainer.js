@@ -3,7 +3,8 @@ import { setDateAc } from "../redux/appointmentReducer";
 import Date from "./Date";
 
 const mapStateToProps = (state) => ({
-    date: state.date
+    date: state.date.date,
+    appointmentDateID: state.appointment.appointmentDate.id
 })
 
 const mapDispatchToProps = (dispatch) => ({

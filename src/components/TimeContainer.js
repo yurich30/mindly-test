@@ -3,7 +3,8 @@ import { setTimeAC } from "../redux/appointmentReducer";
 import Time from "./Time";
 
 const mapStateToProps = (state) => ({
-    time: state.time.time
+    time: state.time.time,
+    appointmentTime: state.appointment.appointmentTime
 })
 
 const mapDispatchToProps = (dispatch) => ({
